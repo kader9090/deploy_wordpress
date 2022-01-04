@@ -1,0 +1,10 @@
+- name: deploy wordpress using a role
+  hosts: worker01
+  become: true
+  vars:
+    edit_hostname: "no"
+    hostname: "AnsibleWorker01"
+  roles:
+    - docker_role
+    - wordpress_role
+
