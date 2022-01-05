@@ -1,5 +1,5 @@
 - name: deploy wordpress using a role
-  hosts: worker02
+  hosts: prod
   become: true
   vars:
     edit_hostname: "no"
